@@ -160,6 +160,7 @@
     html{scroll-behavior:auto}
   }
 </style>
+<style>.langpane,.langpane *{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.langpane input,#pwinput{-webkit-user-select:text;user-select:text}img{-webkit-user-drag:none;user-drag:none;pointer-events:none}</style>
 </head>
 <style>.topbar .logo-img{height:40px}.topbar .tag{display:none}.logo-img{height:72px;width:auto;display:block}#langbar{position:fixed;top:14px;right:16px;z-index:9999;display:flex;gap:4px;background:rgba(14,27,44,0.82);backdrop-filter:blur(8px);border:1px solid rgba(242,239,230,0.16);border-radius:999px;padding:4px}#langbar button{font-family:'Inter',sans-serif;font-size:13px;font-weight:600;letter-spacing:.04em;color:#A9B4C2;background:transparent;border:none;border-radius:999px;padding:6px 12px;cursor:pointer;transition:all .18s}#langbar button:hover{color:#F2EFE6}#langbar button.active{background:#E07B42;color:#0E1B2C}.langpane{display:none}.langpane.show{display:block}@media print{#langbar{display:none}}@media(max-width:640px){#langbar button{padding:5px 9px;font-size:12px}.topbar .tag{display:none}}</style>
 <style>#pwgate{position:fixed;inset:0;z-index:99999;background:#0E1B2C;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;font-family:'Inter',sans-serif;color:#F2EFE6;text-align:center;padding:24px}#pwgate .pw-logo{height:120px;width:auto;margin-bottom:6px}#pwgate .pw-sub{color:#A9B4C2;font-size:15px;max-width:340px;line-height:1.5}#pwgate input{font-family:'Inter',sans-serif;font-size:16px;text-align:center;background:rgba(242,239,230,0.06);border:1px solid rgba(242,239,230,0.2);border-radius:10px;color:#F2EFE6;padding:13px 18px;width:240px;outline:none}#pwgate input:focus{border-color:#E07B42}#pwgate button{font-family:'Inter',sans-serif;font-weight:600;font-size:15px;background:#E07B42;color:#0E1B2C;border:none;border-radius:10px;padding:13px 28px;cursor:pointer}#pwgate .pw-err{color:#E07B42;font-size:14px;min-height:18px}body.locked{overflow:hidden}</style>
@@ -301,19 +302,10 @@
   <p class="sec-body reveal" style="margin-top:24px">La ownership è configurabile per ogni rapporto: quando un coach entra in un’accademia, le parti negoziano chi possiede cosa, e VICKI lo implementa tecnicamente. Il risultato — un coach può andarsene col proprio metodo, un atleta può portare con sé il proprio percorso, un’accademia conserva il proprio patrimonio anche quando le persone cambiano.</p>
 </div></section>
 
-<section><div class="wrap">
-  <div class="sec-head reveal"><span class="sec-num">08</span><h2 class="display">Tre leve di scala</h2></div>
-  <p class="sec-body reveal" style="margin-bottom:28px">Poiché il valore è il layer metodologico, non la visione in sé, VICKI è agnostico rispetto alla sorgente di analisi. Questo apre tre modalità di go-to-market complementari.</p>
-  <div class="levers">
-    <div class="lever reveal"><div class="step">Mode 01</div><h3>Integrata</h3><p>End-to-end: la pipeline di visione di VICKI più il layer metodologico. Per accademie nuove senza analisi già installata.</p><div class="econ"><b>Marginalità piena</b> · crescita lineare, una vendita alla volta</div></div>
-    <div class="lever reveal"><div class="step">Mode 02</div><h3>Sovrapposta</h3><p>L’accademia tiene la sua infrastruttura di analisi esistente; VICKI ci si innesta sopra e aggiunge il cervello metodologico che non ha. Pitch additivo, basso attrito di adozione.</p><div class="econ"><b>Marginalità alta</b> · nessun costo hardware</div></div>
-    <div class="lever reveal hl"><div class="step">Mode 03</div><h3>White-label</h3><p>VICKI integrato come layer metodologico dentro il prodotto di un player di analisi, raggiungendo l’intera base installata attraverso un solo canale.</p><div class="econ"><b>Distribuzione su scala</b> · il CAC crolla di un ordine di grandezza</div></div>
-  </div>
-  <p class="sec-body reveal" style="margin-top:24px">La difesa strutturale in ogni accordo white-label: la memoria stratificata accumulata resta a VICKI e ai clienti finali, non al partner. Un player che sostituisse VICKI partirebbe da memoria zero — perdendo la continuità metodologica che i suoi clienti hanno costruito. <b>Il moat protegge il canale.</b></p>
-</div></section>
+
 
 <section><div class="wrap">
-  <div class="sec-head reveal"><span class="sec-num">09</span><h2 class="display">I livelli di servizio</h2></div>
+  <div class="sec-head reveal"><span class="sec-num">08</span><h2 class="display">I livelli di servizio</h2></div>
   <p class="sec-body reveal" style="margin-bottom:26px">VICKI® si adatta al centro: dal coach singolo all'accademia strutturata, fino al centro d'élite. Ogni livello include tutto ciò che offre il precedente. Il layer metodologico — il cuore di VICKI® — è presente in ogni livello, non è un extra.</p>
   <div class="reveal"><table>
     <thead><tr><th style="width:16%">Livello</th><th>Cosa offre</th></tr></thead>
@@ -328,12 +320,12 @@
 </div></section>
 
 <section><div class="wrap">
-  <div class="sec-head reveal"><span class="sec-num">10</span><h2 class="display">Partnership di sviluppo del metodo</h2></div>
+  <div class="sec-head reveal"><span class="sec-num">09</span><h2 class="display">Partnership di sviluppo del metodo</h2></div>
   <p class="sec-body reveal">Il posizionamento di VICKI sul metodo — non sull'analisi — la rende l'interlocutore naturale per accordi di co-sviluppo e validazione con coach e accademie di riferimento, a livello internazionale ed élite italiana. È una leva di go-to-market deliberata verso il segmento premium: codificare un metodo di vertice valida il prodotto e apre il canale verso le accademie top. <span style="color:var(--steel)">Priorità strategica per la fase post-investimento.</span></p>
 </div></section>
 
 <section><div class="wrap">
-  <div class="sec-head reveal"><span class="sec-num">11</span><h2 class="display">Prodotto e tecnologia</h2></div>
+  <div class="sec-head reveal"><span class="sec-num">10</span><h2 class="display">Prodotto e tecnologia</h2></div>
   <p class="sec-body reveal">Una piattaforma di collegamento multi-ruolo, live, su una pipeline di computer vision proprietaria e pienamente operativa.</p>
   <div class="chips reveal">
     <span class="chip live">Live · app.vicki.pro</span>
@@ -480,19 +472,10 @@
   <p class="sec-body reveal" style="margin-top:24px">Ownership is configurable per relationship: when a coach joins an academy, the parties negotiate who owns what, and VICKI implements it technically. The result — a coach can leave with their method, an athlete can carry their journey, an academy keeps its heritage even after people move on.</p>
 </div></section>
 
-<section><div class="wrap">
-  <div class="sec-head reveal"><span class="sec-num">08</span><h2 class="display">Three levers of scale</h2></div>
-  <p class="sec-body reveal" style="margin-bottom:28px">Because the value is the methodological layer, not the vision itself, VICKI is agnostic to the analysis source. That opens three complementary go-to-market modes.</p>
-  <div class="levers">
-    <div class="lever reveal"><div class="step">Mode 01</div><h3>Integrated</h3><p>End-to-end: VICKI's own vision pipeline plus the methodological layer. For new academies with no installed analytics.</p><div class="econ"><b>Full margin</b> · linear growth, one sale at a time</div></div>
-    <div class="lever reveal"><div class="step">Mode 02</div><h3>Overlay</h3><p>The academy keeps its existing analytics infrastructure; VICKI sits on top and adds the methodological brain it doesn't have. Additive pitch, low adoption friction.</p><div class="econ"><b>High margin</b> · no hardware cost</div></div>
-    <div class="lever reveal hl"><div class="step">Mode 03</div><h3>White-label</h3><p>VICKI embedded as the methodological layer inside an analytics player's product, reaching their entire installed base through one channel.</p><div class="econ"><b>Distribution at scale</b> · CAC drops by an order of magnitude</div></div>
-  </div>
-  <p class="sec-body reveal" style="margin-top:24px">The structural defense in any white-label deal: the layered memory accumulated stays with VICKI and the end clients, not the partner. A player who replaced VICKI would start from zero memory — losing the methodological continuity their clients built. <b>The moat protects the channel.</b></p>
-</div></section>
+
 
 <section><div class="wrap">
-  <div class="sec-head reveal"><span class="sec-num">09</span><h2 class="display">Service levels</h2></div>
+  <div class="sec-head reveal"><span class="sec-num">08</span><h2 class="display">Service levels</h2></div>
   <p class="sec-body reveal" style="margin-bottom:26px">VICKI® adapts to the centre: from the single coach to the structured academy, up to the élite centre. Each level includes everything the previous one offers. The methodological layer — the heart of VICKI® — is present at every level, not an add-on.</p>
   <div class="reveal"><table>
     <thead><tr><th style="width:16%">Level</th><th>What it offers</th></tr></thead>
@@ -507,12 +490,12 @@
 </div></section>
 
 <section><div class="wrap">
-  <div class="sec-head reveal"><span class="sec-num">10</span><h2 class="display">Method development partnerships</h2></div>
+  <div class="sec-head reveal"><span class="sec-num">09</span><h2 class="display">Method development partnerships</h2></div>
   <p class="sec-body reveal">VICKI's positioning on method — not analysis — makes it the natural counterpart for co-development and validation agreements with reference coaches and academies, at international level and across the Italian elite. It's a deliberate go-to-market lever toward the premium segment: codifying a top-level method validates the product and opens the channel to the top academies. <span style="color:var(--steel)">A strategic priority for the post-investment phase.</span></p>
 </div></section>
 
 <section><div class="wrap">
-  <div class="sec-head reveal"><span class="sec-num">11</span><h2 class="display">Product &amp; technology</h2></div>
+  <div class="sec-head reveal"><span class="sec-num">10</span><h2 class="display">Product &amp; technology</h2></div>
   <p class="sec-body reveal">A multi-role connecting platform, live, on a fully operational and proprietary computer-vision pipeline.</p>
   <div class="chips reveal">
     <span class="chip live">Live · app.vicki.pro</span>
@@ -659,19 +642,10 @@
   <p class="sec-body reveal" style="margin-top:24px">Die Eigentümerschaft ist pro Beziehung konfigurierbar: Wenn ein Coach einer Akademie beitritt, verhandeln die Parteien, wem was gehört, und VICKI setzt es technisch um. Das Ergebnis — ein Coach kann mit seiner Methode gehen, ein Athlet kann seinen Werdegang mitnehmen, eine Akademie behält ihr Erbe, auch wenn Menschen weiterziehen.</p>
 </div></section>
 
-<section><div class="wrap">
-  <div class="sec-head reveal"><span class="sec-num">08</span><h2 class="display">Drei Hebel zur Skalierung</h2></div>
-  <p class="sec-body reveal" style="margin-bottom:28px">Da der Wert die methodische Ebene ist, nicht die Vision selbst, ist VICKI gegenüber der Analysequelle agnostisch. Das eröffnet drei komplementäre Go-to-Market-Modi.</p>
-  <div class="levers">
-    <div class="lever reveal"><div class="step">Mode 01</div><h3>Integriert</h3><p>End-to-End: VICKIs eigene Vision-Pipeline plus die methodische Ebene. Für neue Akademien ohne installierte Analytik.</p><div class="econ"><b>Volle Marge</b> · lineares Wachstum, ein Verkauf nach dem anderen</div></div>
-    <div class="lever reveal"><div class="step">Mode 02</div><h3>Overlay</h3><p>Die Akademie behält ihre bestehende Analytik-Infrastruktur; VICKI liegt darüber und ergänzt das methodische Gehirn, das sie nicht hat. Additiver Pitch, geringe Einführungshürde.</p><div class="econ"><b>Hohe Marge</b> · keine Hardwarekosten</div></div>
-    <div class="lever reveal hl"><div class="step">Mode 03</div><h3>White-label</h3><p>VICKI eingebettet als methodische Ebene im Produkt eines Analytics-Anbieters, erreicht dessen gesamte installierte Basis über einen Kanal.</p><div class="econ"><b>Distribution im großen Maßstab</b> · CAC sinkt um eine Größenordnung</div></div>
-  </div>
-  <p class="sec-body reveal" style="margin-top:24px">Die strukturelle Verteidigung in jedem White-Label-Deal: Das angesammelte geschichtete Gedächtnis bleibt bei VICKI und den Endkunden, nicht beim Partner. Ein Anbieter, der VICKI ersetzte, begänne bei null Gedächtnis — und verlöre die methodische Kontinuität, die seine Kunden aufgebaut haben. <b>Der Burggraben schützt den Kanal.</b></p>
-</div></section>
+
 
 <section><div class="wrap">
-  <div class="sec-head reveal"><span class="sec-num">09</span><h2 class="display">Service-Stufen</h2></div>
+  <div class="sec-head reveal"><span class="sec-num">08</span><h2 class="display">Service-Stufen</h2></div>
   <p class="sec-body reveal" style="margin-bottom:26px">VICKI® passt sich dem Zentrum an: vom einzelnen Coach über die strukturierte Akademie bis zum Elite-Zentrum. Jede Stufe enthält alles, was die vorherige bietet. Die methodische Ebene — das Herz von VICKI® — ist auf jeder Stufe vorhanden, kein Zusatz.</p>
   <div class="reveal"><table>
     <thead><tr><th style="width:16%">Stufe</th><th>Was sie bietet</th></tr></thead>
@@ -686,12 +660,12 @@
 </div></section>
 
 <section><div class="wrap">
-  <div class="sec-head reveal"><span class="sec-num">10</span><h2 class="display">Partnerschaften zur Methodenentwicklung</h2></div>
+  <div class="sec-head reveal"><span class="sec-num">09</span><h2 class="display">Partnerschaften zur Methodenentwicklung</h2></div>
   <p class="sec-body reveal">VICKIs Positionierung auf der Methode — nicht der Analyse — macht es zum natürlichen Partner für Co-Entwicklungs- und Validierungsvereinbarungen mit Referenz-Coaches und -Akademien, auf internationaler Ebene und in der italienischen Elite. Es ist ein bewusster Go-to-Market-Hebel zum Premium-Segment: Die Kodifizierung einer Spitzenmethode validiert das Produkt und öffnet den Kanal zu den Top-Akademien. <span style="color:var(--steel)">Eine strategische Priorität für die Phase nach der Investition.</span></p>
 </div></section>
 
 <section><div class="wrap">
-  <div class="sec-head reveal"><span class="sec-num">11</span><h2 class="display">Produkt &amp; Technologie</h2></div>
+  <div class="sec-head reveal"><span class="sec-num">10</span><h2 class="display">Produkt &amp; Technologie</h2></div>
   <p class="sec-body reveal">Eine Multi-Rollen-Verbindungsplattform, live, auf einer voll funktionsfähigen und proprietären Computer-Vision-Pipeline.</p>
   <div class="chips reveal">
     <span class="chip live">Live · app.vicki.pro</span>
@@ -838,19 +812,10 @@
   <p class="sec-body reveal" style="margin-top:24px">La propiedad es configurable en cada relación: cuando un entrenador entra en una academia, las partes negocian quién posee qué, y VICKI® lo implementa técnicamente. El resultado — un entrenador puede marcharse con su método, un atleta puede llevarse su trayectoria, una academia conserva su patrimonio incluso cuando las personas cambian.</p>
 </div></section>
 
-<section><div class="wrap">
-  <div class="sec-head reveal"><span class="sec-num">08</span><h2 class="display">Tres palancas de escala</h2></div>
-  <p class="sec-body reveal" style="margin-bottom:28px">Como el valor es la capa metodológica, no la visión en sí, VICKI® es agnóstico respecto a la fuente de análisis. Esto abre tres modalidades de go-to-market complementarias.</p>
-  <div class="levers">
-    <div class="lever reveal"><div class="step">Modo 01</div><h3>Integrada</h3><p>End-to-end: la pipeline de visión de VICKI® más la capa metodológica. Para academias nuevas sin análisis ya instalado.</p><div class="econ"><b>Margen pleno</b> · crecimiento lineal, una venta cada vez</div></div>
-    <div class="lever reveal"><div class="step">Modo 02</div><h3>Superpuesta</h3><p>La academia mantiene su infraestructura de análisis existente; VICKI® se integra encima y añade el cerebro metodológico que no tiene. Propuesta aditiva, baja fricción de adopción.</p><div class="econ"><b>Margen alto</b> · sin coste de hardware</div></div>
-    <div class="lever reveal hl"><div class="step">Modo 03</div><h3>White-label</h3><p>VICKI® integrado como capa metodológica dentro del producto de un actor de análisis, alcanzando toda la base instalada a través de un solo canal.</p><div class="econ"><b>Distribución a escala</b> · el CAC cae un orden de magnitud</div></div>
-  </div>
-  <p class="sec-body reveal" style="margin-top:24px">La defensa estructural en cada acuerdo white-label: la memoria estratificada acumulada permanece en VICKI® y en los clientes finales, no en el socio. Un actor que sustituyera VICKI® partiría de memoria cero — perdiendo la continuidad metodológica que sus clientes han construido. <b>El foso protege el canal.</b></p>
-</div></section>
+
 
 <section><div class="wrap">
-  <div class="sec-head reveal"><span class="sec-num">09</span><h2 class="display">Los niveles de servicio</h2></div>
+  <div class="sec-head reveal"><span class="sec-num">08</span><h2 class="display">Los niveles de servicio</h2></div>
   <p class="sec-body reveal" style="margin-bottom:26px">VICKI® se adapta al centro: del entrenador individual a la academia estructurada, hasta el centro de élite. Cada nivel incluye todo lo que ofrece el anterior. La capa metodológica — el corazón de VICKI® — está presente en cada nivel, no es un extra.</p>
   <div class="reveal"><table>
     <thead><tr><th style="width:16%">Nivel</th><th>Qué ofrece</th></tr></thead>
@@ -865,12 +830,12 @@
 </div></section>
 
 <section><div class="wrap">
-  <div class="sec-head reveal"><span class="sec-num">10</span><h2 class="display">Asociaciones de desarrollo del método</h2></div>
+  <div class="sec-head reveal"><span class="sec-num">09</span><h2 class="display">Asociaciones de desarrollo del método</h2></div>
   <p class="sec-body reveal">El posicionamiento de VICKI® sobre el método — no sobre el análisis — la convierte en el interlocutor natural para acuerdos de co-desarrollo y validación con entrenadores y academias de referencia, a nivel internacional y de élite. Es una palanca de go-to-market deliberada hacia el segmento premium: codificar un método de élite valida el producto y abre el canal hacia las mejores academias.</p>
 </div></section>
 
 <section><div class="wrap">
-  <div class="sec-head reveal"><span class="sec-num">11</span><h2 class="display">Producto y tecnología</h2></div>
+  <div class="sec-head reveal"><span class="sec-num">10</span><h2 class="display">Producto y tecnología</h2></div>
   <p class="sec-body reveal">Una plataforma de conexión multi-rol, en vivo, sobre una pipeline de computer vision propietaria y plenamente operativa.</p>
   <div class="chips reveal">
     <span class="chip live">En vivo · app.vicki.pro</span>
@@ -883,5 +848,16 @@
   </div>
 </div></section></div>
 <script>const VICKI_PW="vicki2026";document.body.classList.add('locked');function pwCheck(){const v=document.getElementById('pwinput').value;if(v===VICKI_PW){document.getElementById('pwgate').style.display='none';document.body.classList.remove('locked');try{sessionStorage.setItem('vk_demo','1');}catch(e){}}else{document.getElementById('pwerr').textContent='Password errata';document.getElementById('pwinput').value='';}}try{if(sessionStorage.getItem('vk_demo')==='1'){document.getElementById('pwgate').style.display='none';document.body.classList.remove('locked');}}catch(e){}function setLang(l){document.querySelectorAll('.langpane').forEach(p=>p.classList.toggle('show',p.id==='lang-'+l));document.querySelectorAll('#langbar button').forEach(b=>b.classList.toggle('active',b.dataset.l===l));document.documentElement.lang=l;try{localStorage.setItem('vk_lang',l);}catch(e){}document.querySelectorAll('#lang-'+l+' .reveal').forEach(el=>el.classList.add('in'));window.scrollTo(0,0);}const obs=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target);}});},{threshold:0.12});document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));(function(){let l='it';try{l=localStorage.getItem('vk_lang')||'';}catch(e){}if(!l){const n=(navigator.language||'it').slice(0,2);l=['it','en','de','es'].includes(n)?n:'it';}setLang(l);})();</script>
+<script>
+  document.addEventListener('contextmenu',e=>{e.preventDefault();},false);
+  document.addEventListener('copy',e=>{e.preventDefault();},false);
+  document.addEventListener('cut',e=>{e.preventDefault();},false);
+  document.addEventListener('keydown',function(e){
+    var k=e.key?e.key.toLowerCase():'';
+    if((e.ctrlKey||e.metaKey)&&['c','x','s','u','a','p'].includes(k)){e.preventDefault();}
+    if(e.key==='F12'){e.preventDefault();}
+  },false);
+  document.addEventListener('dragstart',e=>{e.preventDefault();},false);
+</script>
 </body>
 </html>
